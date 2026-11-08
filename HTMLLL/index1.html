@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Event Listener Practice</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 30px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        input {
+            padding: 10px;
+            margin: 10px;
+        }
+
+        #box {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            margin: 20px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>JavaScript Event Listener</h1>
+
+    <!-- 1. Click Event -->
+    <h2>1. Click Event</h2>
+    <button id="clickBtn">Click Me</button>
+
+    <!-- 2. Double Click -->
+    <h2>2. Double Click Event</h2>
+    <button id="dblBtn">Double Click Me</button>
+
+    <!-- 3. Mouseover -->
+    <h2>3. Mouseover Event</h2>
+    <div id="box">Move Mouse Here</div>
+
+    <!-- 4. Input Event -->
+    <h2>4. Input Event</h2>
+    <input type="text" id="nameInput" placeholder="Enter your name">
+    <p id="output"></p>
+
+    <!-- 5. Keydown Event -->
+    <h2>5. Keydown Event</h2>
+    <input type="text" id="keyInput" placeholder="Press any key">
+
+    <!-- 6. Change Event -->
+    <h2>6. Change Event</h2>
+    <select id="colorSelect">
+        <option value="">Select Color</option>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+    </select>
+
+    <!-- 7. Counter -->
+    <h2>7. Counter App</h2>
+    <h3 id="count">0</h3>
+    <button id="increase">+</button>
+    <button id="decrease">-</button>
+
+    <!-- 8. Password Show Hide -->
+    <h2>8. Password Show/Hide</h2>
+    <input type="password" id="password" placeholder="Enter Password">
+    <button id="toggleBtn">Show Password</button>
+
+    <!-- 9. Form Submit -->
+    <h2>9. Form Submit Event</h2>
+    <form id="myForm">
+        <input type="text" id="username" placeholder="Enter Name">
+        <button type="submit">Submit</button>
+    </form>
+    <p id="message"></p>
+
+    <!-- 10. Mouseout Event -->
+    <h2>10. Mouseout Event</h2>
+    <button id="mouseBtn">Move Mouse Out</button>
+
+
+    <script>
+
+        // 1. Click Event
+        let clickBtn = document.querySelector("#clickBtn");
+
+        clickBtn.addEventListener("click", function() {
+            console.log("Hello JavaScript");
+        });
+
+
+        // 2. Double Click Event
+        let dblBtn = document.querySelector("#dblBtn");
+
+        dblBtn.addEventListener("dblclick", function() {
+            alert("You clicked twice!");
+        });
+
+
+        // 3. Mouseover Event
+        let box = document.querySelector("#box");
+
+        box.addEventListener("mouseover", function() {
+            box.style.backgroundColor = "yellow";
+        });
+
+
+        // 4. Input Event
+        let nameInput = document.querySelector("#nameInput");
+        let output = document.querySelector("#output");
+
+        nameInput.addEventListener("input", function() {
+            output.textContent = nameInput.value;
+        });
+
+
+        // 5. Keydown Event
+        let keyInput = document.querySelector("#keyInput");
+
+        keyInput.addEventListener("keydown", function(event) {
+            console.log("Key Pressed:", event.key);
+        });
+
+
+        // 6. Change Event
+        let colorSelect = document.querySelector("#colorSelect");
+
+        colorSelect.addEventListener("change", function() {
+            document.body.style.backgroundColor = colorSelect.value;
+        });
+
+
+        // 7. Counter App
+        let count = 0;
+
+        let countDisplay = document.querySelector("#count");
+        let increase = document.querySelector("#increase");
+        let decrease = document.querySelector("#decrease");
+
+        increase.addEventListener("click", function() {
+            count++;
+            countDisplay.textContent = count;
+        });
+
+        decrease.addEventListener("click", function() {
+            count--;
+            countDisplay.textContent = count;
+        });
+
+
+        // 8. Password Show/Hide
+        let password = document.querySelector("#password");
+        let toggleBtn = document.querySelector("#toggleBtn");
+
+        toggleBtn.addEventListener("click", function() {
+
+            if (password.type === "password") {
+                password.type = "text";
+                toggleBtn.textContent = "Hide Password";
+            } else {
+                password.type = "password";
+                toggleBtn.textContent = "Show Password";
+            }
+
+        });
+
+
+        // 9. Form Submit Event
+        let myForm = document.querySelector("#myForm");
+        let username = document.querySelector("#username");
+        let message = document.querySelector("#message");
+
+        myForm.addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            if (username.value.trim() === "") {
+                message.textContent = "Please enter your name!";
+            } else {
+                message.textContent = "Form submitted successfully!";
+            }
+
+        });
+
+
+        // 10. Mouseout Event
+        let mouseBtn = document.querySelector("#mouseBtn");
+
+        mouseBtn.addEventListener("mouseout", function() {
+            console.log("Mouse moved out!");
+        });
+
+    </script>
+
+</body>
+</html>
