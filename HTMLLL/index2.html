@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Event Listener Lab</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>JavaScript Event Listener Lab</h1>
+        <p>Learn and Practice JavaScript Events</p>
+    </header>
+
+    <main class="container">
+
+        <section class="card">
+            <h2>1. Click Event</h2>
+            <button id="clickBtn">Click Me</button>
+            <p id="clickOutput">Waiting for click...</p>
+        </section>
+
+        <section class="card">
+            <h2>2. Double Click Event</h2>
+            <button id="doubleBtn">Double Click Me</button>
+            <p id="doubleOutput">Double click the button</p>
+        </section>
+
+        <section class="card">
+            <h2>3. Mouse Events</h2>
+            <div id="mouseBox">Move Your Mouse Here</div>
+            <p id="mouseOutput">Mouse is outside</p>
+        </section>
+
+        <section class="card">
+            <h2>4. Input Event</h2>
+            <input type="text" id="nameInput" placeholder="Enter your name">
+            <p id="nameOutput">Your name will appear here</p>
+        </section>
+
+        <section class="card">
+            <h2>5. Keyboard Events</h2>
+            <input type="text" id="keyboardInput" placeholder="Press any key">
+            <p id="keyOutput">Key information will appear here</p>
+        </section>
+
+        <section class="card">
+            <h2>6. Change Event</h2>
+            <select id="colorSelect">
+                <option value="">Select Background Color</option>
+                <option value="#ffcccc">Red</option>
+                <option value="#ccffcc">Green</option>
+                <option value="#ccccff">Blue</option>
+                <option value="#ffffff">White</option>
+            </select>
+        </section>
+
+        <section class="card">
+            <h2>7. Focus & Blur Events</h2>
+            <input type="text" id="focusInput" placeholder="Click here to focus">
+            <p id="focusOutput">Input is not focused</p>
+        </section>
+
+        <section class="card">
+            <h2>8. Counter App</h2>
+            <h1 id="count">0</h1>
+            <button id="increaseBtn">+</button>
+            <button id="decreaseBtn">-</button>
+            <button id="resetBtn">Reset</button>
+        </section>
+
+        <section class="card">
+            <h2>9. Password Show / Hide</h2>
+            <input type="password" id="passwordInput" placeholder="Enter password">
+            <button id="togglePassword">Show Password</button>
+        </section>
+
+        <section class="card">
+            <h2>10. Form Submit Event</h2>
+            <form id="myForm">
+                <input type="text" id="formName" placeholder="Enter your name">
+                <input type="email" id="formEmail" placeholder="Enter your email">
+                <button type="submit">Submit Form</button>
+            </form>
+            <p id="formOutput"></p>
+        </section>
+
+        <section class="card">
+            <h2>11. Event Delegation</h2>
+            <ul id="itemList">
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>HTML</li>
+                <li>CSS</li>
+            </ul>
+            <p id="listOutput">Click any item</p>
+        </section>
+
+        <section class="card">
+            <h2>12. Character Counter</h2>
+            <textarea id="messageInput" placeholder="Write something..."></textarea>
+            <p>Characters: <span id="charCount">0</span></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Practice JavaScript Every Day 🚀</p>
+    </footer>
+
+</body>
+</html>
