@@ -100,3 +100,25 @@ resetBtn.addEventListener("click", function () {
     count = 0;
     countDisplay.innerText = count;
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const heading = document.createElement("h1");
+const paragraph = document.createElement("p");
+const button = document.createElement("button");
+
+console.log(heading);
+console.log(paragraph);
+console.log(button);
