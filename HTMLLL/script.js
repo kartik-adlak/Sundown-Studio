@@ -108,13 +108,6 @@ resetBtn.addEventListener("click", function () {
 
 
 
-
-
-
-
-
-
-
 const heading = document.createElement("h1");
 const paragraph = document.createElement("p");
 const button = document.createElement("button");
@@ -122,3 +115,21 @@ const button = document.createElement("button");
 console.log(heading);
 console.log(paragraph);
 console.log(button);
+
+
+
+
+
+
+
+let num = 17;
+let isPrime = true;
+
+for (let i = 2; i < num; i++) {
+    if (num % i === 0) {
+        isPrime = false;
+        break;
+    }
+}
+
+console.log(isPrime ? "Prime" : "Not Prime");
