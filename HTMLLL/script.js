@@ -133,3 +133,27 @@ for (let i = 2; i < num; i++) {
 }
 
 console.log(isPrime ? "Prime" : "Not Prime");
+
+
+
+
+
+
+
+
+
+
+
+
+let student = {
+    name: "Kartik",
+    age: 21,
+    course: "B.Tech",
+    skills: ["Java", "JavaScript", "React"]
+};
+
+let { name, age, skills } = student;
+
+console.log(name);
+console.log(age);
+console.log(skills);
