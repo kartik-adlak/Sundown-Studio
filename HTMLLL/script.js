@@ -144,6 +144,31 @@ console.log(isPrime ? "Prime" : "Not Prime");
 
 
 
+let arr = [10, 20, 45, 30, 45, 15];
+
+let largest = -Infinity;
+let secondLargest = -Infinity;
+
+for (let num of arr) {
+    if (num > largest) {
+        secondLargest = largest;
+        largest = num;
+    } else if (num > secondLargest && num !== largest) {
+        secondLargest = num;
+    }
+}
+
+console.log(secondLargest);
+
+
+
+
+
+
+
+
+
+
 
 let student = {
     name: "Kartik",
