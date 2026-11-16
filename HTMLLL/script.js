@@ -182,3 +182,22 @@ let { name, age, skills } = student;
 console.log(name);
 console.log(age);
 console.log(skills);
+
+
+
+
+
+
+
+
+
+let numm = 12345;
+let reverse = 0;
+
+while (numm > 0) {
+    let digit = numm % 10;
+    reverse = reverse * 10 + digit;
+    numm = Math.floor(numm / 10);
+}
+
+console.log(reverse);
