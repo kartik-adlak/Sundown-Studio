@@ -201,3 +201,24 @@ while (numm > 0) {
 }
 
 console.log(reverse);
+
+
+
+
+
+
+
+
+
+
+let arrr = [1, 2, 3, 5, 6];
+let n = 6;
+
+let expected = n * (n + 1) / 2;
+let actual = 0;
+
+for (let num of arrr) {
+    actual += num;
+}
+
+console.log(expected - actual);
