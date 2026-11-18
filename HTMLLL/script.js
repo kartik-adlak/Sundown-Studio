@@ -222,3 +222,16 @@ for (let num of arrr) {
 }
 
 console.log(expected - actual);
+
+
+
+
+
+let str = "javascript";
+let result = "";
+
+for (let i = str.length - 1; i >= 0; i--) {
+    result += str[i];
+}
+
+console.log(result);
