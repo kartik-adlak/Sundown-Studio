@@ -235,3 +235,25 @@ for (let i = str.length - 1; i >= 0; i--) {
 }
 
 console.log(result);
+
+
+
+
+
+
+
+
+
+
+
+let nummm = 121;
+let original = num;
+let reversee = 0;
+
+while (num > 0) {
+    let digit = num % 10;
+    reversee = reversee * 10 + digit;
+    num = Math.floor(num / 10);
+}
+
+console.log(original === reversee ? "Palindrome" : "Not Palindrome");
