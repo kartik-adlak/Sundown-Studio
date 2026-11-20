@@ -257,3 +257,26 @@ while (num > 0) {
 }
 
 console.log(original === reversee ? "Palindrome" : "Not Palindrome");
+
+
+
+
+
+
+
+
+let a = 12;
+let b = 18;
+
+let x = a;
+let y = b;
+
+while (y !== 0) {
+    let temp = y;
+    y = x % y;
+    x = temp;
+}
+
+let lcm = (a * b) / x;
+
+console.log("LCM:", lcm);
