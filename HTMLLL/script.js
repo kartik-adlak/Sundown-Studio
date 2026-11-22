@@ -306,3 +306,25 @@ function divide(a, b) {
 
 divide(10, 2);
 divide(10, 0);
+
+
+
+
+
+
+
+
+function outer() {
+    let count = 0;
+
+    return function inner() {
+        count++;
+        console.log(count);
+    };
+}
+
+let counter = outer();
+
+counter();
+counter();
+counter();
