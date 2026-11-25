@@ -388,3 +388,33 @@ for (let i = 1; i < prices.length; i++) {
 }
 
 console.log(maxProfit); // 5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function delay(ms) {
+    return new Promise(resolve => {
+        setTimeout(resolve, ms);
+    });
+}
+
+async function main() {
+    console.log("Start");
+
+    await delay(2000);
+
+    console.log("2 seconds later");
+}
+
+main();
