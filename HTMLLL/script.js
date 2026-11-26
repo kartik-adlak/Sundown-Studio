@@ -418,3 +418,27 @@ async function main() {
 }
 
 main();
+
+
+
+
+
+
+
+
+
+
+let strr = "aaabbccccdd";
+let resultt = "";
+let countt = 1;
+
+for (let i = 0; i < str.length; i++) {
+    if (strr[i] === strr[i + 1]) {
+        countt++;
+    } else {
+        resultt += strr[i] + countt;
+        countt = 1;
+    }
+}
+
+console.log(resultt); 
