@@ -442,3 +442,24 @@ for (let i = 0; i < str.length; i++) {
 }
 
 console.log(resultt); 
+
+
+
+
+
+
+function fibonacci(n, memo = {}) {
+    if (n <= 1) return n;
+
+    if (memo[n] !== undefined) {
+        return memo[n];
+    }
+
+    memo[n] = fibonacci(n - 1, memo) + fibonacci(n - 2, memo);
+
+    return memo[n];
+}
+
+for (let i = 0; i < 10; i++) {
+    console.log(fibonacci(i));
+}
