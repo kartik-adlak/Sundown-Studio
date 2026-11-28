@@ -463,3 +463,25 @@ function fibonacci(n, memo = {}) {
 for (let i = 0; i < 10; i++) {
     console.log(fibonacci(i));
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let year = 2028;
+
+console.log(
+    year % 400 === 0 || (year % 4 === 0 && year % 100 !== 0)
+    ? "Leap Year" : "Not Leap Year"
+);
